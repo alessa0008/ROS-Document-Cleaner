@@ -19,7 +19,7 @@ echo    Use this when using cheat
 echo __________________________________________
 echo Progress :
 if not exist "%TEMP%\AlessaDocument" mkdir %TEMP%\AlessaDocument
-if not exist "%TEMP%\AlessaDocument" echo CANNOT FOUND ROS FOLDER
+
 if exist %TEMP%\AlessaDocument echo AlessaDocument Cleaner is Running
 ren "C:\ros\Documents\gm*" "*.alessa" >nul 2>nul 
 move /Y C:\ros\Documents\*.alessa* %TEMP%\AlessaDocument >nul 2>nul
